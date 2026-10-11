@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c12">
+  <title>Arcade Orbit — games for your next break</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="ambient ambient-a" aria-hidden="true"></div>
+  <div class="ambient ambient-b" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="Arcade Orbit home"><span class="brand-icon">◈</span><span>arcade<span class="brand-light">orbit</span></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="#discover">Discover</a>
+      <a class="nav-link" href="#library">All games</a>
+      <a class="nav-link" href="#about">About</a>
+    </nav>
+    <a class="top-cta" href="#library"><span class="status-dot"></span> Explore games <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero" id="discover">
+      <div class="hero-copy">
+        <div class="kicker"><span class="kicker-line"></span> YOUR NEXT BREAK STARTS HERE</div>
+        <h1>Find your<br>next <span>favorite.</span></h1>
+        <p class="hero-text">A growing collection of quick games, big adventures, and tiny distractions. Pick a mood and jump in.</p>
+        <a class="hero-button" href="#library">Browse the arcade <span aria-hidden="true">↓</span></a>
+        <div class="hero-meta"><span>✦</span> A little fun, one game at a time</div>
+      </div>
+      <a class="feature-card" href="#library" aria-label="Browse featured games">
+        <div class="feature-top"><span class="feature-label"><i></i> FEATURED PLAYLIST</span><span class="feature-count">01 / 04</span></div>
+        <div class="feature-art" aria-hidden="true"><div class="feature-orbit orbit-a"></div><div class="feature-orbit orbit-b"></div><span class="feature-planet">✦</span><span class="feature-satellite">◒</span><span class="feature-spark spark-a">✳</span><span class="feature-spark spark-b">✦</span></div>
+        <div class="feature-bottom"><div><p>THE QUICK PLAY MIX</p><h2>Just one more round.</h2></div><span class="round-arrow">↗</span></div>
+      </a>
+    </section>
+
+    <section class="catalog" id="library">
+      <div class="catalog-head">
+        <div><p class="section-kicker">THE ARCADE</p><h2>Pick your game</h2><p class="catalog-subtitle">Find something that fits the moment.</p></div>
+        <label class="search"><span aria-hidden="true">⌕</span><input id="search-input" type="search" placeholder="Search games..." autocomplete="off"><kbd>/</kbd></label>
+      </div>
+
+      <div class="catalog-tools"><div class="filters" role="group" aria-label="Filter games by category">
+        <button class="filter active" data-filter="all">All games <span>27</span></button>
+        <button class="filter" data-filter="action">⚡ Action</button>
+        <button class="filter" data-filter="puzzle">◈ Puzzle</button>
+        <button class="filter" data-filter="racing">🏁 Racing</button>
+        <button class="filter" data-filter="chill">☁ Chill</button>
+      </div><div class="sort-label"><span class="online-dot"></span> 27 games to explore</div></div>
+
+      <div class="game-grid" id="game-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><span>🛸</span><h3>No games found</h3><p>Try a different search or category.</p></div>
+      <p class="preview-note"><span>✦</span> Thumbnails load from their image hosts as they appear on screen, using visitors’ internet. Pool Shooter keeps its fallback art because its embed code has no separate thumbnail.</p>
+    </section>
+
+    <section class="about" id="about"><div class="about-mark">✳</div><div><p class="section-kicker">A PROJECT IN PROGRESS</p><h2>Built for the “one more game” moment.</h2><p>Arcade Orbit is a tiny project growing into a place to find browser games. The catalog comes first; real game links come next.</p></div><a href="#top" class="back-top">Back to top ↑</a></section>
+  </main>
+
+  <footer><a class="brand footer-brand" href="#top"><span class="brand-icon">◈</span><span>arcade<span class="brand-light">orbit</span></span></a><span>Made for fun, one small step at a time.</span><span class="footer-star">✦</span></footer>
+</body>
+</html>
+
